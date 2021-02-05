@@ -1,0 +1,223 @@
+@font-face {
+  font-family: Orland;
+  src: url(Orlande.woff);
+}
+
+@font-face {
+  font-family: Nineland;
+  src: url(Nineland.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5%;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: 'Orland', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: 200;
+  text-decoration: line-through;
+}
+
+.menu-links ul li {
+  display: inline-block;
+  padding-right: 40px;
+  font-weight: 100;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.menu-links ul li a{
+  text-decoration: none;
+  color: #382A24;
+}
+
+.search,
+.social {
+  font-size: 20px;
+}
+
+.social i{
+  padding-right: 50px;
+  font-size: 14px;
+}
+
+.social a{
+  text-decoration: none;
+  color: #382A24;
+}
+
+.left-panel{
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  float: left;
+  left: 0;
+  bottom: 0;
+  background-color: #EBE3DC;
+}
+
+.right-panel{
+  position: absolute;
+  width: 30%;
+  height: 80%;
+  float: right;
+  right: 0;
+  bottom: 0;
+  background-color: #EBE3DC;
+}
+
+.right-panel-image{
+  position: absolute;
+  left: -5%;
+  bottom: 5%;
+  height: 100%;
+  width: 100%;
+  background-image: url("./img/mumbaikar-home-main-intro.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.content {
+  position: absolute;
+  height: 30%;
+  width: 40%;
+  bottom: 20%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 0;
+}
+
+.title {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: calc(6em + 1vw);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-stretch: ultra-condensed;
+  letter-spacing: 10px;
+  color: #382A24;
+}
+
+.tagline {
+  font-size: calc(1em + 1vw);
+  color: #999;
+}
+
+.pages {
+  flex: 0;
+  letter-spacing: 5px;
+  color: #999;
+}
+
+.more {
+  margin-top: 50px;
+  flex: 1;
+}
+
+.more a {
+  text-decoration: none;
+  color: #382A24;
+  background: transparent;
+  padding: 10px 30px;
+  border: 1px solid #382A24;
+  border-radius: 5px;
+}
+
+.desc p {
+  width: 50%;
+  line-height: 2;
+}
+
+.desc span {
+  color: #382A24;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -46%);
+  }
+  50% {
+    transform: translate(-50%, -54%);
+  }
+  100% {
+    transform: translate(-50%, -46%);
+  }
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .right-panel{
+    height: 40%;
+    width: 60%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .title{
+    font-size: 20;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .title{
+    font-size: 20px;
+  }
+
+  .right-panel{
+    height: 40%;
+    width: 30%;
+  }
+
+  .right-panel-image{
+    right: 50px;
+    bottom: 0px;
+    background-position: right;
+  }
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .title{
+    font-size: calc(4em + 1vw);
+  }
+  .desc p {
+    width: 100%;
+    line-height: 2;
+  }
+}
